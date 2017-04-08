@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Каталог</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+
+		<header class="header">
+			<div class="container header__bar clearfix">
+				<a href="#" class="header__logo"><img src="images/nerds-logo.png" width="160" height="65" alt="Логотип"></a>
+				<nav class="header__main-nav">
+					<ul>
+						<li><a href="index.html">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="page.html" class="active">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+		  	</nav>
+		  	<a href="#" class="header__cart">Корзина</a>
+	  	</div>
+			<h1 class="header__heading">Магазин готовых шаблонов</h1>
+		</header>
+
+
+		<main class="container">
+
+			<div class="content clearfix">
+
+				<div class="content_left">
+					<form action="form.php" method="GET">
+					<div class="content_left__filter">
+						<p class="filter__heading subheading">Стоимость:</p>
+      			<div class="range-filter">
+        			<div class="range-controls">
+         		 		<div class="scale"><div class="bar"></div></div>
+          			<div class="toggle toggle-min"></div>
+		          	<div class="toggle toggle-max"></div>
+		        	</div>
+		        	<div class="price-controls">
+		          	<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+		         		<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+		      		</div>
+		      	</div>
+		      </div>
+					<div class="content_left__selector">
+						<p class="selector__heading subheading">Сетка:</p>
+						<input type="radio" name="layout" id="adaptive"><label for="adaptive" class="filter-label">Адаптивная</label>
+						<input type="radio" name="layout" id="fixed" disabled><label for="fixed" class="filter-label">Фиксированная</label>
+						<input type="radio" name="layout" id="responsive"><label for="responsive" class="filter-label">Резиновая</label>
+					</div>
+					<div class="content_left__checkboxes">
+						<p class="checkboxes__heading subheading">Особенности:</p>
+						<input type="checkbox" name="features" id="slider"><label for="slider" class="filter-label">Слайдер</label>
+						<input type="checkbox" name="features" id="advantages"><label for="advantages" class="filter-label">Блок преимуществ</label>
+						<input type="checkbox" name="features" id="news" checked disabled><label for="news" class="filter-label">Новости</label>
+						<input type="checkbox" name="features" id="gallery"><label for="gallery" class="filter-label">Галерея</label>
+						<input type="checkbox" name="features" id="basket"><label for="basket" class="filter-label">Корзина</label>
+					</div>
+						<button type="submit" class="btn btn_gray btn_form">Показать</button>
+					</form>
+				</div>
+
+				<div class="content_right">
+					<div class="content_right__sorting clearfix">
+						<p class="sorting-type__heading subheading">Сортировать:</p>
+						<div class="sorting-type__variant">
+							<a href="#" class="sorting-type active">По цене</a>
+							<a href="#" class="sorting-type">По типу</a>
+							<a href="#" class="sorting-type">По названию</a>
+							<a href="#" class="sorting-type sorting-type_arrow sorting-type_arrow-up active">По убыванию</a> 
+							<a href="#" class="sorting-type sorting-type_arrow sorting-type_arrow-down">По возрастанию</a> 
+						</div>
+					</div>
+					<div class="content_right__portfolio">
+						<article class="portfolio__item">
+							<div class="portfolio__item-circle">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<img src="images/img-sedona.jpg" width="360" height="576" alt="Изображение">
+							<div class="portfolio__item-content">
+								<p class="portfolio__item-content__heading subheading">Sedona</p>
+								<p class="portfolio__item-content__text">Информационный сайт<br>для туристов</p>
+								<a href="#" class="btn btn_red btn_price">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="portfolio__item">
+							<div class="portfolio__item-circle">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<img src="images/img-pink.jpg" width="360" height="576" alt="Изображение">
+							<div class="portfolio__item-content">
+								<p class="portfolio__item-content__heading subheading">Pink App</p>
+								<p class="portfolio__item-content__text">Продуктовый лендинг<br>приложения для IOS и Android</p>
+								<a href="#" class="btn btn_red btn_price">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="portfolio__item">
+							<div class="portfolio__item-circle">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<img src="images/img-barbershop.jpg" width="360" height="576" alt="Изображение">
+							<div class="portfolio__item-content">
+								<p class="portfolio__item-content__heading subheading">Barbershop</p>
+								<p class="portfolio__item-content__text">Сайт салона красоты.<br>Для мужчин, да.</p>
+								<a href="#" class="btn btn_red btn_price">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="portfolio__item">
+							<div class="portfolio__item-circle">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<img src="images/img-mishka.jpg" width="360" height="576" alt="Изображение">
+							<div class="portfolio__item-content">
+								<p class="portfolio__item-content__heading subheading">Mishka</p>
+								<p class="portfolio__item-content__text">Интернет-магазин<br>вязаных игрушек</p>
+								<a href="#" class="btn btn_red btn_price">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="portfolio__item">
+							<div class="portfolio__item-circle">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<img src="images/img-aplus.jpg" width="360" height="576" alt="Изображение">
+							<div class="portfolio__item-content">
+								<p class="portfolio__item-content__heading subheading">A plus</p>
+								<p class="portfolio__item-content__text">Лендинг курсов повышения<br>квалификации</p>
+								<a href="#" class="btn btn_red btn_price">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="portfolio__item">
+							<div class="portfolio__item-circle">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<img src="images/img-kvast.jpg" width="360" height="576" alt="Изображение">
+							<div class="portfolio__item-content">
+								<p class="portfolio__item-content__heading subheading">кваст</p>
+								<p class="portfolio__item-content__text">Промо-сайт проиводителя<br>крафтового кваса</p>
+								<a href="#" class="btn btn_red btn_price">9 900 руб.</a>
+							</div>
+						</article>
+					</div>
+					<div class="content_right__btn_pagination">
+						<a href="#" class="btn btn_gray btn_square active">1</a>
+						<a href="#" class="btn btn_gray btn_square">2</a>
+						<a href="#" class="btn btn_gray btn_square">3</a>
+						<a href="#" class="btn btn_gray btn_next">Следующая</a>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<div class="map">
+			<div class="map__address">
+				<h4 class="address-heading">Nёrds design studio</h4>
+				<p class="address">191186, Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+				<p class="telephone">тел. +7 (812) 275-75-75</p>
+				<a href="#" class="btn btn_contact btn_red">Напишите нам</a>
+			</div>
+			<div class="map__logo">
+				<img src="images/map-marker.png" width="231" height="190" alt="Логотип">
+			</div>
+		</div>
+
+		<footer class="footer clearfix">
+			<div class="container">
+				<div class="footer__buttons">
+					<a href="#" class="btn_social btn_vk">Вконтакте</a>
+					<a href="#" class="btn_social btn_fb">Facebook</a>
+					<a href="#" class="btn_social btn_insta">Instagram</a>
+				</div>
+				<div class="footer__text">
+					<h2 class="footer__heading-text">Давайте дружить, это выгодно!</h2>
+					<span>Скидка 10% для друзей из социальных сетей</span>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
